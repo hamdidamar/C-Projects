@@ -1,6 +1,4 @@
-/*Doğan Kasas 172802020
-  Hamdi Damar 172802029
-*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -18,13 +16,13 @@ int main()
 }
 void IlHesaplama()
 {
-    printf("Seçime katılan parti sayısı:");
+    printf("SeÃ§ime katÃ½lan parti sayÃ½sÃ½:");
     scanf("%d",&PartiSayisi);
 
     do{
         GecerliOySayisi=0;
 
-        printf("İl Plaka Kodunu Giriniz:");
+        printf("Ãl Plaka Kodunu Giriniz:");
         scanf("%d",&IlPlaka);
     if (IlPlaka==0)
         {
@@ -37,14 +35,14 @@ void IlHesaplama()
         scanf("%d",&IlMilletvekili);
         for ( i=0; i<PartiSayisi; i++)
         {
-            printf("%c. Partisi’nin oy sayisini giriniz: ",Partiler[i]);
+            printf("%c. Partisiâ€™nin oy sayisini giriniz: ",Partiler[i]);
             scanf("%d",&OySayisi[i]);
             ToplamOySayisi[i]+=OySayisi[i];
             GecerliOySayisi+=OySayisi[i];
             tempGecerliOy=GecerliOySayisi;
         }
         GenelTopOy+=tempGecerliOy;
-        printf("\n\n\nİl Plaka Kodu: %d",IlPlaka);
+        printf("\n\n\nÃl Plaka Kodu: %d",IlPlaka);
         printf("\nMilletvekili Kontenjani: %d",IlMilletvekili);
         printf("\nGecerli Oy Sayisi:%d",GecerliOySayisi);
             for (i=0;i<PartiSayisi;i++)
@@ -105,8 +103,8 @@ void MilletVekiliSay ()
 void Siralama()
 {
 
-    for(i=0;i<50;i++){OySirasi[i]=i;}/*Oy sırasına göre parti yazdırmak için yapıldı. OySirasi[i] deki i sırayı belirtirken;
-    i partinin numarasını belirtiyor*/
+    for(i=0;i<50;i++){OySirasi[i]=i;}/*Oy sÃ½rasÃ½na gÃ¶re parti yazdÃ½rmak iÃ§in yapÃ½ldÃ½. OySirasi[i] deki i sÃ½rayÃ½ belirtirken;
+    i partinin numarasÃ½nÃ½ belirtiyor*/
 
 
     for ( i=0; i<PartiSayisi-1; i++)
@@ -150,7 +148,7 @@ void Siralama()
 
 
 
-        printf("\n\t\tOy Sayısı\t\tOy Yüzdesi\t\tMV Sayısı");
+        printf("\n\t\tOy SayÃ½sÃ½\t\tOy YÃ¼zdesi\t\tMV SayÃ½sÃ½");
         printf("\n\t\t---------\t\t----------\t\t---------");
 
         for (i=0; i<PartiSayisi; i++)
@@ -161,8 +159,8 @@ void Siralama()
 }
 void TurkiyeGeneli()
 {
-        printf("\nTürkiye Geneli\nMilletvekili Kontenjanı:%d\nGeçerli Oy Sayısı:%d\n",TopIlMVSay,GenelTopOy);
-        printf("\n\t\tOy Sayısı\t\tOy Yüzdesi\t\tMV Sayısı\t\tMV Yüzdesi\t\t1.lik Sayısı\t\t0 MV Sayısı");
+        printf("\nTÃ¼rkiye Geneli\nMilletvekili KontenjanÃ½:%d\nGeÃ§erli Oy SayÃ½sÃ½:%d\n",TopIlMVSay,GenelTopOy);
+        printf("\n\t\tOy SayÃ½sÃ½\t\tOy YÃ¼zdesi\t\tMV SayÃ½sÃ½\t\tMV YÃ¼zdesi\t\t1.lik SayÃ½sÃ½\t\t0 MV SayÃ½sÃ½");
         printf("\n\t\t---------\t\t----------\t\t---------\t\t----------\t\t------------\t\t-----------\t\t");
 for (i=0; i<PartiSayisi; i++)
     {
@@ -215,7 +213,7 @@ for (i=0;i<PartiSayisi;i++)
         }
     }
 }
-printf("\n\nİktidar Partisi= %c",Partiler[x]);
+printf("\n\nÃktidar Partisi= %c",Partiler[x]);
 printf("\nAna Muhalifet Partisi= %c",Partiler[y]);
 
 
